@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(128, 128, 128);
+}
+
+.container {
+  width: 91rem;
+  margin: auto;
+  padding: 5rem;
+}
+
+.card {
+  background-color: rgb(169, 169, 169);
+  width: 38rem;
+  margin: 1rem;
+  border-radius: 4rem;
+  display: inline-block;
+}
+
+.card::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+img {
+  border-radius: 50%;
+  float: left;
+}
+
+.wrapper {
+  float: left;
+  line-height: 2.2rem;
+  padding-top: 1.8rem;
+  padding-left: 6rem;
+}
+
+.name,
+.telp {
+  display: block;
+  text-align: center;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.telp {
+  color: rgb(240, 255, 255);
+}
+
+.close {
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(240, 255, 255);
+  padding-top: 2.6rem;
+  padding-right: 4rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.close:hover {
+  color: rgb(255, 0, 0);
+}

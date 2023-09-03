@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript DOM - Bermain dengan Warna</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        font-size: 10px;
+      }
+
+      body {
+        font-size: 1.6rem;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        padding: 5rem;
+        height: 100vh;
+      }
+
+      button {
+        border: 0;
+      }
+
+      h1 {
+        margin-bottom: 5rem;
+        user-select: none;
+      }
+
+      .btn {
+        margin: 0 auto;
+        display: block;
+        width: 8rem;
+        height: 4rem;
+        color: rgb(255, 255, 255);
+        background-color: #212529;
+        border-color: #212529;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        font-family: inherit;
+      }
+
+      .btn:hover {
+        color: rgb(255, 255, 255);
+        background-color: #1c1f23;
+        border-color: #1a1e21;
+      }
+
+      .box {
+        width: 4rem;
+        height: 4rem;
+        margin: 2rem auto 1rem;
+      }
+
+      .red {
+        background-color: rgb(255, 0, 0);
+      }
+
+      .green {
+        background-color: rgb(0, 128, 0);
+      }
+
+      .blue {
+        background-color: rgb(0, 0, 255);
+      }
+    </style>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Bermain dengan Warna</h1>
+    <button type="button" class="btn">Acak Warna</button>
+
+    <div class="box red"></div>
+    <input type="range" name="slider-red" min="0" max="255" />
+    <div class="box green"></div>
+    <input type="range" name="slider-green" min="0" max="255" />
+    <div class="box blue"></div>
+    <input type="range" name="slider-blue" min="0" max="255" />
+
+    <script src="script.js"></script>
+  </body>
+</html>

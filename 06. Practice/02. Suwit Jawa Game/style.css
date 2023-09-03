@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(image/repeated-square-dark.png);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin: 2rem 0 4rem;
+}
+
+.container {
+  max-width: 50rem;
+  width: calc(100vw - 5rem);
+  position: relative;
+  margin: auto;
+}
+
+/* Comp Section */
+
+.comp-area {
+  height: 25rem;
+  background-color: rgb(240, 128, 128);
+  margin-bottom: 0.5rem;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Info Section */
+
+.info {
+  width: 15rem;
+  height: 5rem;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2rem;
+  border: 0.4rem solid rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Player Section */
+
+.player-area {
+  height: 25rem;
+  background-color: rgb(173, 216, 230);
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.player-area ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-area li {
+  margin: 0 1rem;
+}
+
+.player-area img {
+  cursor: pointer;
+  max-width: 100%;
+}
+
+/* Images Section */
+
+.img-comp {
+  width: 12rem;
+  border-radius: 50%;
+}
+
+img.img-comp {
+  max-width: 100%;
+}
+
+.gajah,
+.orang,
+.semut {
+  width: 12rem;
+  border-radius: 50%;
+  transition: transform 0.2s ease-out;
+}
+
+img.gajah,
+img.orang,
+img.semut {
+  cursor: pointer;
+  max-width: 100%;
+}
+
+.gajah:hover,
+.orang:hover,
+.semut:hover {
+  box-shadow: 0 0 0.5rem 0.4rem rgb(0, 0, 255, 0.25);
+}
+
+.gajah:active,
+.orang:active,
+.semut:active {
+  transform: translateY(0.8rem);
+}
